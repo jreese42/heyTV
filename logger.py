@@ -9,17 +9,17 @@ class Logger:
 
     def logDebug(self, text):
         """Print a debug message containing text"""
-        time = datetime.now().strftime("%H:%M:%D ")
+        time = datetime.now().strftime("%H:%M:%S ")
         self.log(time + "(DBG):\t", text)
 
     def logWarning(self, text):
         """Print a debug message containing text"""
-        time = datetime.now().strftime("%H:%M:%D ")
+        time = datetime.now().strftime("%H:%M:%S ")
         self.log(time + "(WARN):\t", text)
 
     def logError(self, text):
         """Print a debug message containing text"""
-        time = datetime.now().strftime("%H:%M:%D ")
+        time = datetime.now().strftime("%H:%M:%S ")
         self.log(time + "(ERR):\t", text)
 
 
