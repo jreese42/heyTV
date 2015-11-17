@@ -8,7 +8,7 @@ audiomanager = audiomanager.AudioManager(format     = pyaudio.paInt16,
                                          chunk_size = 1024,
                                          silence_limit = 1,
                                          prev_audio_time = 0.5,
-                                         threshold = 2500,
+                                         threshold = 5000,
                                          log_fd = sys.stdout)
 
-audiomanager.listen(1)
+audiomanager.listen(-1)
